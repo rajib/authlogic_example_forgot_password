@@ -1,0 +1,887 @@
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:21:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 70ms (View: 8, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:21:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering template within layouts/application
+Rendering password_resets/new
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 42ms (View: 33, DB: 4) | 200 OK [http://localhost/password_reset/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2009-04-19 05:21:24) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@rocketmail.com"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@rocketmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'Gthrln_U4iKRmrHbFfbW', `updated_at` = '2009-04-18 23:51:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+Sent mail to chowdhury284@rocketmail.com
+
+Date: Sun, 19 Apr 2009 05:21:24 +0530
+To: chowdhury284@rocketmail.com
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+ A request to reset your password has been made.
+ If you did not make this request, simply ignore this email.
+ If you did make this request just click the link below:
+
+ If the above URL does not work try copying and pasting it into your browser.
+ If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 72ms (DB: 7) | 302 Found [http://localhost/password_reset]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:21:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 47ms (View: 9, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:22:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering template within layouts/application
+Rendering password_resets/new
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 41ms (View: 32, DB: 4) | 200 OK [http://localhost/password_reset/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2009-04-19 05:22:56) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@rocketmail.com"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@rocketmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'H6LXJX543yoAhMdRqH0i', `updated_at` = '2009-04-18 23:52:56' WHERE `id` = 1[0m
+  [4;36;1mSQL (29.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to chowdhury284@rocketmail.com
+
+Date: Sun, 19 Apr 2009 05:22:56 +0530
+To: chowdhury284@rocketmail.com
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+ A request to reset your password has been made.
+ If you did not make this request, simply ignore this email.
+ If you did make this request just click the link below:
+    http://authlogic_example.binarylogic.com/password_reset/edit.h6lxjx543yoahmdrqh0i
+ If the above URL does not work try copying and pasting it into your browser.
+ If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 137ms (DB: 33) | 302 Found [http://localhost/password_reset]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:22:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 48ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:23:38) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionController::UnknownAction (No action responded to edit. Actions: create and new):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:25:42) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+SyntaxError (/home/rajib/Rails Projects/authlogic_example/app/controllers/password_resets_controller.rb:25: syntax error, unexpected ':', expecting ']'
+   @user.password_confirmation = params[:user][: password_confirmation]
+                                                ^
+/home/rajib/Rails Projects/authlogic_example/app/controllers/password_resets_controller.rb:45: syntax error, unexpected $end, expecting kEND):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:26:16) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+SyntaxError (/home/rajib/Rails Projects/authlogic_example/app/controllers/password_resets_controller.rb:45: syntax error, unexpected $end, expecting kEND):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (359.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:27:07) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:27:54) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:27:57) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:28:14) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:28:17) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:28:36) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+Rendering password_resets/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/password_resets/edit.erb:
+1: <h1>Change My Password</h1>
+2: 
+3: <% form_for @user, :url => password_reset_path, :method => :put do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :password %><br />
+6:   <%= f.password_field :password %><br />
+
+    app/views/password_resets/edit.erb:3
+    app/controllers/password_resets_controller.rb:20:in `edit'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:28:58) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+
+ActionView::MissingTemplate (Missing template password_resets/edit.erb in view path app/views):
+  app/controllers/password_resets_controller.rb:20:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:29:09) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+Rendering password_resets/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/password_resets/edit.erb:
+1: <h1>Change My Password</h1>
+2: 
+3: <% form_for @user, :url => password_reset_path, :method => :put do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= f.label :password %><br />
+6:   <%= f.password_field :password %><br />
+
+    app/views/password_resets/edit.erb:3
+    app/controllers/password_resets_controller.rb:20:in `edit'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (246.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:30:30) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 56ms (DB: 5) | 302 Found [http://localhost/password_reset/edit.h6lxjx543yoahmdrqh0i]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:30:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 65ms (View: 29, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:30:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering template within layouts/application
+Rendering password_resets/new
+  [4;36;1mUser Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 185ms (View: 178, DB: 4) | 200 OK [http://localhost/password_reset/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2009-04-19 05:30:51) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@rocketmail.com"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@rocketmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'Nj5k7wJn0HXKbNOjZpav', `updated_at` = '2009-04-19 00:00:51' WHERE `id` = 1[0m
+  [4;35;1mSQL (16.4ms)[0m   [0mCOMMIT[0m
+Sent mail to chowdhury284@rocketmail.com
+
+Date: Sun, 19 Apr 2009 05:30:51 +0530
+To: chowdhury284@rocketmail.com
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+ A request to reset your password has been made.
+ If you did not make this request, simply ignore this email.
+ If you did make this request just click the link below:
+    http://authlogic_example.binarylogic.com/password_reset/edit.nj5k7wjn0hxkbnojzpav
+ If the above URL does not work try copying and pasting it into your browser.
+ If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 140ms (DB: 21) | 302 Found [http://localhost/password_reset]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:30:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 47ms (View: 12, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to nj5k7wjn0hxkbnojzpav (for 127.0.0.1 at 2009-04-19 05:31:34) [GET]
+  Parameters: {"format"=>"nj5k7wjn0hxkbnojzpav", "action"=>"edit", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 37ms (DB: 5) | 302 Found [http://localhost/password_reset/edit.nj5k7wjn0hxkbnojzpav]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:31:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 50ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2009-04-19 05:33:36) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 35ms (DB: 5) | 302 Found [http://localhost/password_reset/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:33:37) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 49ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to h6lxjx543yoahmdrqh0i (for 127.0.0.1 at 2009-04-19 05:33:46) [GET]
+  Parameters: {"format"=>"h6lxjx543yoahmdrqh0i", "action"=>"edit", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 35ms (DB: 4) | 302 Found [http://localhost/password_reset/edit.h6lxjx543yoahmdrqh0i]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:33:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 47ms (View: 6, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081103171327)
+Migrating to CreateSessions (20081106072031)
+Migrating to AddUsersPasswordResetFields (20090418231913)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit to Nj5k7wJn0HXKbNOjZpav (for 127.0.0.1 at 2009-04-19 05:37:29) [GET]
+  Parameters: {"format"=>"Nj5k7wJn0HXKbNOjZpav", "action"=>"edit", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:load_user_using_perishable_token] rendered_or_redirected.
+Completed in 27ms (DB: 3) | 302 Found [http://localhost/password_reset/edit.Nj5k7wJn0HXKbNOjZpav]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:37:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 43ms (View: 7, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-19 05:39:09) [GET]
+
+ActionController::RoutingError (No route matches "/password_reset/edit/Nj5k7wJn0HXKbNOjZpav" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-19 05:39:27) [GET]
+
+ActionController::RoutingError (No route matches "/password_reset/Nj5k7wJn0HXKbNOjZpav/edit" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:40:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 74ms (View: 13, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:40:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 49ms (View: 15, DB: 3) | 200 OK [http://localhost/password_resets/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2009-04-19 05:40:43) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@rocketmail.com"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@rocketmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'Wjg_zhebfor84ycGOMhd', `updated_at` = '2009-04-19 00:10:43' WHERE `id` = 1[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCOMMIT[0m
+Sent mail to chowdhury284@rocketmail.com
+
+Date: Sun, 19 Apr 2009 05:40:43 +0530
+To: chowdhury284@rocketmail.com
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+ A request to reset your password has been made.
+ If you did not make this request, simply ignore this email.
+ If you did make this request just click the link below:
+    http://authlogic_example.binarylogic.com/password_resets/Wjg_zhebfor84ycGOMhd/edit
+ If the above URL does not work try copying and pasting it into your browser.
+ If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 71ms (DB: 10) | 302 Found [http://localhost/password_resets]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:40:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 217ms (View: 7, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:41:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 45ms (View: 10, DB: 4) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2009-04-19 05:41:11) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@rocketmail.com"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@rocketmail.com') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'yH8mZgd32dWFjIpjf4pq', `updated_at` = '2009-04-19 00:11:11' WHERE `id` = 1[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mCOMMIT[0m
+Sent mail to chowdhury284@rocketmail.com
+
+Date: Sun, 19 Apr 2009 05:41:11 +0530
+To: chowdhury284@rocketmail.com
+Subject: Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+ A request to reset your password has been made.
+ If you did not make this request, simply ignore this email.
+ If you did make this request just click the link below:
+    http://authlogic_example.binarylogic.com/password_resets/yH8mZgd32dWFjIpjf4pq/edit
+ If the above URL does not work try copying and pasting it into your browser.
+ If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/
+Completed in 82ms (DB: 12) | 302 Found [http://localhost/password_resets]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:41:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 46ms (View: 11, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2009-04-19 05:41:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"yH8mZgd32dWFjIpjf4pq", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (24.2ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'yH8mZgd32dWFjIpjf4pq' and updated_at > '2009-04-19 00:01:34') LIMIT 1[0m
+
+Errno::ENOENT (No such file or directory - /home/rajib/Rails Projects/authlogic_example/app/views/password_resets/edit.html.erb):
+  app/controllers/password_resets_controller.rb:24:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#edit (for 127.0.0.1 at 2009-04-19 05:41:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"yH8mZgd32dWFjIpjf4pq", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'yH8mZgd32dWFjIpjf4pq' and updated_at > '2009-04-19 00:01:56') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering password_resets/edit
+Completed in 52ms (View: 16, DB: 4) | 200 OK [http://localhost/password_resets/yH8mZgd32dWFjIpjf4pq/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#update (for 127.0.0.1 at 2009-04-19 05:42:09) [PUT]
+  Parameters: {"user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Update my password and log me in", "action"=>"update", "_method"=>"put", "id"=>"yH8mZgd32dWFjIpjf4pq", "controller"=>"password_resets"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (perishable_token = 'yH8mZgd32dWFjIpjf4pq' and updated_at > '2009-04-19 00:02:09') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Exists (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '08ba2d88d505e2dfe628506dc38802d69179e2a63f247ee660c4ecb5e2bb5f47c0066ff4fe4c43e808eaaf86b68032aef06d758ef74b5823b4818317c91a62d3' AND `users`.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `login_count` = 2, `persistence_token` = '08ba2d88d505e2dfe628506dc38802d69179e2a63f247ee660c4ecb5e2bb5f47c0066ff4fe4c43e808eaaf86b68032aef06d758ef74b5823b4818317c91a62d3', `perishable_token` = 't6bTGKNjJ4eTrv8GQ0RS', `crypted_password` = 'eb3e0588dd4fd3391ec86d74f97ce243f6e2c7fdb8c629d64014e530398ff3e67abc92ca959e853578911b4d0746f5bf875e2b3bfb29e7409e4da5713659808f', `last_login_at` = '2009-04-18 23:32:09', `last_login_ip` = '127.0.0.1', `updated_at` = '2009-04-19 00:12:09', `last_request_at` = '2009-04-19 00:12:09', `current_login_at` = '2009-04-19 00:12:09', `password_salt` = 'X8o8aXq9iHvqk-yC-gzj' WHERE `id` = 1[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 130ms (DB: 17) | 302 Found [http://localhost/password_resets/yH8mZgd32dWFjIpjf4pq]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-04-19 05:42:09) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'UYxaTBRHLQZlkA0mtbYL', `updated_at` = '2009-04-19 00:12:10', `last_request_at` = '2009-04-19 00:12:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (23.4ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 110ms (View: 13, DB: 35) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2009-04-19 05:43:05) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'm-ufuS0I1-e2VgWoyIr7', `updated_at` = '2009-04-19 00:13:05', `last_request_at` = '2009-04-19 00:13:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 99ms (DB: 12) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:43:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 47ms (View: 9, DB: 3) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2009-04-19 05:43:11) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"password"=>"[FILTERED]", "login"=>"rajib", "remember_me"=>"0"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (6.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'rajib') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (2.6ms)[0m   [0;1mUPDATE `users` SET `login_count` = 3, `perishable_token` = 'yROKFOsnq38CMfQFpK5V', `last_login_at` = '2009-04-19 00:12:09', `updated_at` = '2009-04-19 00:13:11', `last_request_at` = '2009-04-19 00:13:11', `current_login_at` = '2009-04-19 00:13:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (32.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 137ms (DB: 45) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-04-19 05:43:11) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `perishable_token` = 'A4sZNPnpgkBP_D2Sfibc', `updated_at` = '2009-04-19 00:13:11', `last_request_at` = '2009-04-19 00:13:11' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 71ms (View: 6, DB: 5) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2009-04-19 05:43:14) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `perishable_token` = 'iuJyCNy0qww_PdszgIqC', `updated_at` = '2009-04-19 00:13:14', `last_request_at` = '2009-04-19 00:13:14' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 92ms (DB: 9) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:43:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 50ms (View: 12, DB: 3) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2009-04-19 05:45:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 40ms (View: 4, DB: 4) | 200 OK [http://localhost/password_resets/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-04-19 05:45:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (14.1ms)
+Completed in 119ms (View: 84, DB: 4) | 200 OK [http://localhost/account/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-04-19 05:45:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 40ms (View: 7, DB: 4) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (25.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081103171327)
+Migrating to CreateSessions (20081106072031)
+Migrating to AddUsersPasswordResetFields (20090418231913)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (26.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081103171327)
+Migrating to CreateSessions (20081106072031)
+Migrating to AddUsersPasswordResetFields (20090418231913)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20081103171327)
+Migrating to CreateSessions (20081106072031)
+Migrating to AddUsersPasswordResetFields (20090418231913)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m

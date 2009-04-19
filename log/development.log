@@ -1,0 +1,55 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#create (for 127.0.1.1 at 2009-04-19 17:49:28) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@gmail.com"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@gmail.com') LIMIT 1[0m
+Redirected to http://site.local/
+Completed in 116ms (DB: 6) | 302 Found [http://site.local/password_resets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.1.1 at 2009-04-19 17:49:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 94ms (View: 49, DB: 3) | 200 OK [http://site.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PasswordResetsController#new (for 127.0.1.1 at 2009-04-19 17:50:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"password_resets"}
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 66ms (View: 29, DB: 7) | 200 OK [http://site.local/password_resets/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PasswordResetsController#create (for 127.0.1.1 at 2009-04-19 17:50:10) [POST]
+  Parameters: {"commit"=>"Reset my password", "action"=>"create", "controller"=>"password_resets", "email"=>"chowdhury284@gmail.com"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'chowdhury284@gmail.com') LIMIT 1[0m
+Redirected to http://site.local/
+Completed in 27ms (DB: 4) | 302 Found [http://site.local/password_resets]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UserSessionsController#new (for 127.0.1.1 at 2009-04-19 17:50:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 55ms (View: 19, DB: 3) | 200 OK [http://site.local/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
